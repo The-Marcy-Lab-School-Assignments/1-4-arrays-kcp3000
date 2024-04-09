@@ -86,5 +86,17 @@ const roundAllNumsDown = (arr) => {
 //console.log(roundAllNumsDown([1.1, 1.2, 2.1]))
 
 //   getAllYCoordinates,
+
+const getAllYCoordinates = (arrOfCoords) => {
+
+    let newArr = []
+    for (let i = 0; i < arrOfCoords.length; i++) {
+        newArr.push(arrOfCoords[i][1])
+    }
+    return newArr //im actually proud of how fast i did this
+};
+console.log(getAllYCoordinates([[1, 2], [3, 4], [5, 6]]))
+console.log(getAllYCoordinates([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+
 // } = require('./from-scratch');
 // const { uppercaseAll, destructureCoordinates } = require('./modify');

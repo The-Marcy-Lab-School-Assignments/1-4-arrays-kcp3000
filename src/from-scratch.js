@@ -40,7 +40,12 @@ const roundAllNumsDown = (arr) => {
   return newArr
 }
 
-const getAllYCoordinates = () => {
+const getAllYCoordinates = (arrOfCoords) => {
+  let newArr = []
+  for (let i = 0; i < arrOfCoords.length; i++) {
+    newArr.push(arrOfCoords[i][1])
+  }
+  return newArr //im actually proud of how fast i did this
 };
 
 module.exports = {
