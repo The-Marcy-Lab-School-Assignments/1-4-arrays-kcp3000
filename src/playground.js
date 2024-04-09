@@ -49,15 +49,42 @@ const insertIntoMiddle = (arr, value) => {
 //   deleteFromMiddle,
 
 const deleteFromMiddle = (arr) => {
-    arr.splice(Math.ceil(arr.length / 2), 1)
+    arr.splice(arr.length / 2, 1)
     return arr
 };
-console.log(deleteFromMiddle(['a', 'v', 'c', 'd']))
-console.log(deleteFromMiddle([1, 2, 3]))
-console.log(deleteFromMiddle([1, 2, 3, 4, 5]))
+// console.log(deleteFromMiddle(['a', 'b', 'c', 'd']))
+// console.log(deleteFromMiddle([1, 2, 3]))
+// console.log(deleteFromMiddle([1, 2, 3, 4, 5]))
 
 //   isRightIndex,
+
+const isRightIndex = (arr) => {
+    //let fax = true
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr.indexOf(i) === index && arr[i] === value) {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    //     console.log(arr[i])
+    // }
+    //console.log(arr.indexOf(arr.length))
+    if (arr.indexOf(arr) === 1) { }
+};
+//console.log(isRightIndex(['a', 'b', 'c', 'd'], 'c', 2))
+//isRightIndex([1])
+
 //   roundAllNumsDown,
+
+const roundAllNumsDown = (arr) => {
+    let newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(Math.floor(arr[i]))
+    }
+    return newArr
+}
+//console.log(roundAllNumsDown([1.1, 1.2, 2.1]))
+
 //   getAllYCoordinates,
 // } = require('./from-scratch');
 // const { uppercaseAll, destructureCoordinates } = require('./modify');

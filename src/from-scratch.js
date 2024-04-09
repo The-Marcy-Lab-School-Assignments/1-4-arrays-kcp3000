@@ -25,15 +25,20 @@ const insertIntoMiddle = (arr, value) => {
 };
 
 const deleteFromMiddle = (arr) => {
-  arr.splice(Math.ceil(arr.length / 2) - 1, 1)
+  arr.splice(arr.length / 2, 1)
   return arr
 };
 
 const isRightIndex = () => {
 };
 
-const roundAllNumsDown = () => {
-};
+const roundAllNumsDown = (arr) => {
+  let newArr = []
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(Math.floor(arr[i]))
+  }
+  return newArr
+}
 
 const getAllYCoordinates = () => {
 };
