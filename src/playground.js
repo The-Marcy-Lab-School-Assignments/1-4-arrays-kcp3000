@@ -122,9 +122,9 @@ const getAllYCoordinates = (arrOfCoords) => {
 // console.log(favoriteLocations);
 
 
-const favoriteLocations = ["New York City", "Jersey City"];
-const addBostonToFavorites = (locations) => {
-    locations.unshift("Boston");
-};
-addBostonToFavorites(favoriteLocations);
-console.log(favoriteLocations);
+// const favoriteLocations = ["New York City", "Jersey City"];
+// const addBostonToFavorites = (locations) => {
+//     locations.unshift("Boston");
+// };
+// addBostonToFavorites(favoriteLocations);
+// console.log(favoriteLocations);
