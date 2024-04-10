@@ -29,7 +29,12 @@ const deleteFromMiddle = (arr) => {
   return arr
 };
 
-const isRightIndex = () => {
+const isRightIndex = (arr, index, value) => {
+  if (arr[value] === index) {
+    return true
+  } else {
+    return false
+  };
 };
 
 const roundAllNumsDown = (arr) => {

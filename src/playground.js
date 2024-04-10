@@ -58,7 +58,7 @@ const deleteFromMiddle = (arr) => {
 
 //   isRightIndex,
 
-const isRightIndex = (arr) => {
+const isRightIndex = (arr, index, value) => {
     //let fax = true
     // for (let i = 0; i < arr.length; i++) {
     //     if (arr.indexOf(i) === index && arr[i] === value) {
@@ -69,9 +69,13 @@ const isRightIndex = (arr) => {
     //     console.log(arr[i])
     // }
     //console.log(arr.indexOf(arr.length))
-    if (arr.indexOf(arr) === 1) { }
+    if (arr[index] === value) {
+        return true
+    } else {
+        return false
+    };
 };
-//console.log(isRightIndex(['a', 'b', 'c', 'd'], 'c', 2))
+console.log(isRightIndex(['a', 'b', 'c', 'd'], 2, 'c'))
 //isRightIndex([1])
 
 //   roundAllNumsDown,
@@ -100,3 +104,19 @@ console.log(getAllYCoordinates([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 
 // } = require('./from-scratch');
 // const { uppercaseAll, destructureCoordinates } = require('./modify');
+
+
+
+let name = "mike";
+const changeName = (nameToChange) => {
+    nameToChange = "tom";
+};
+changeName(name);
+console.log(name);
+
+const favoriteLocations = ["New York City", "Jersey City"];
+const addBostonToFavorites = (locations) => {
+    locations.unshift("Boston");
+};
+addBostonToFavorites(favoriteLocations);
+console.log(favoriteLocations);
