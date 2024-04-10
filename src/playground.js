@@ -75,7 +75,7 @@ const isRightIndex = (arr, index, value) => {
         return false
     };
 };
-console.log(isRightIndex(['a', 'b', 'c', 'd'], 2, 'c'))
+//console.log(isRightIndex(['a', 'b', 'c', 'd'], 2, 'c'))
 //isRightIndex([1])
 
 //   roundAllNumsDown,
@@ -99,20 +99,28 @@ const getAllYCoordinates = (arrOfCoords) => {
     }
     return newArr //im actually proud of how fast i did this
 };
-console.log(getAllYCoordinates([[1, 2], [3, 4], [5, 6]]))
-console.log(getAllYCoordinates([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+// console.log(getAllYCoordinates([[1, 2], [3, 4], [5, 6]]))
+// console.log(getAllYCoordinates([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
 
 // } = require('./from-scratch');
 // const { uppercaseAll, destructureCoordinates } = require('./modify');
 
 
 
-let name = "mike";
-const changeName = (nameToChange) => {
-    nameToChange = "tom";
-};
-changeName(name);
-console.log(name);
+// let name = "mike";
+// const changeName = (nameToChange) => {
+//     nameToChange = "tom";
+// };
+// changeName(name);
+// console.log(name);
+
+// const favoriteLocations = ["New York City", "Jersey City"];
+// const addBostonToFavorites = (locations) => {
+//     locations.unshift("Boston");
+// };
+// addBostonToFavorites(favoriteLocations);
+// console.log(favoriteLocations);
+
 
 const favoriteLocations = ["New York City", "Jersey City"];
 const addBostonToFavorites = (locations) => {
