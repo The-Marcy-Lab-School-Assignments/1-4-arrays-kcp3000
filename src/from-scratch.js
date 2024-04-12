@@ -1,3 +1,4 @@
+  /** FEEDBACK: Because conditional statement naturally will evaluate truthy or falsy, you do not need to set it equal to true! */
 const addToFrontOrBack = (arr, value, isFront) => {
   if (isFront === true) {
     arr.unshift(value)
@@ -28,7 +29,7 @@ const deleteFromMiddle = (arr) => {
   arr.splice(arr.length / 2, 1)
   return arr
 };
-
+/** FEEDBACK: Same here! You could just return arr[index] === value. */
 const isRightIndex = (arr, index, value) => {
   if (arr[value] === index) {
     return true

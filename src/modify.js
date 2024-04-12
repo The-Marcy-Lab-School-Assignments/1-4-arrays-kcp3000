@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job! In the future, ensure to remove any commented out code! */
 const uppercaseAll = (...words) => {
   // return [
   //   word1.toUpperCase(),
